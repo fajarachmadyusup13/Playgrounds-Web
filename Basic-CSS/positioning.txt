@@ -1,0 +1,29 @@
+* default position dari setiap element adalah static
+* untuk element yang memiliki properti position non-static memiliki akses ke atribut top, bottom, right, left
+* menggunakan properti position non-static akan membuat suatu elemen seolah-olah berbeda dimensi dari elemen lainnya
+
+*relative:
+	- pada saat menggerakan elemen yang memiliki properti position relative, ruang yang 
+	  ditempati sebelumnya masih ada
+	- ketika menggerakan elemen yang memiliki position relative, maka elemen tersebut
+ 	  bergerak relatif terhadap posisi semulanya
+	- jika top:0 left:0 maka elemen akan berada pada titik semulanya
+
+*absolute:
+	- pada saat menggerakan elemen yang memiliki properti position absolute, ruang yang 
+	  ditempati sebelumnya dianggap tidak ada
+	- ketika menggerakan elemen yang memiliki position absolute, maka elemen tersebut
+ 	  bergerak relatif terhadap posisi dari elemen parentnya, selama elemen parentnya
+ 	  memiliki position yang non-static juga. (parent disini artinya parent terdekatnya)
+	- jika top:0 left:0 maka elemen akan berada pada di ujung kiri atas dari parentnya
+
+*fixed	:
+	- hampir sama dengan absolute
+	- pada saat menggerakan elemen yang memiliki properti position fixed, ruang yang 
+	  ditempati sebelumnya dianggap tidak ada
+	- ketika menggerakan elemen yang memiliki position fixed, maka elemen tersebut
+ 	  bergerak relatif terhadap posisi dari window.
+	- jika top:0 left:0 maka elemen akan berada pada di ujung kiri atas dari window
+
+*z-index: digunakan untuk mengatur tumpukan elemen yang memiliki properti position non-static
+	

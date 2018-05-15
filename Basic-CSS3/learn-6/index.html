@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn-6</title>
+    <style>
+        
+        .kotak {
+            height: 100px;
+            width: 100px;
+            background-color: salmon;
+            line-height: 100px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .kotak1 { transition: margin-left 2s, transform 3s 3s; }
+
+        .kotak2 { transition: all 2s ease-in 2s; }
+
+        .kotak3 { transition: all 2s ease-out 2s; }
+
+        .kotak4 { transition: all 2s ease-in-out 2s; }
+
+        .kotak5 { transition: all 2s linear 2s; }
+
+        .kotak6 { transition: all 2s cubic-bezier(1,-0.21, 0.03, 0.96) 2s; }
+
+        .container {
+            width: 900px;
+            margin: 10px auto;
+            border: 5px solid black;
+        }
+
+        .container:hover .kotak {
+            transform: rotate(720deg);
+            margin-left: 800px;
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kotak kotak1">ease</div>
+        <div class="kotak kotak2">ease-in</div>
+        <div class="kotak kotak3">ease-out</div>
+        <div class="kotak kotak4">ease-in-out</div>
+        <div class="kotak kotak5">linear</div>
+        <div class="kotak kotak6">cubic-bezier</div>
+    </div>
+</body>
+</html>

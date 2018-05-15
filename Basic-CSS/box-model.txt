@@ -1,0 +1,21 @@
+margin overlap:
+* top-bottom : hanya akan mengambil ukuran yg paling besar
+* left-right : akan menjumlahkan kedua ukuran
+
+untuk display inline-block selalu ada jarak antar element untuk mengatasinya hilangkan white space antar element
+
+negatif margin: element akan bergerak ke arah yang berlawanan
+auto : nilai akan disesuaikan oleh browser
+
+
+padding :
+* tidak bisa menerima nilai negatif
+* tidak menerima nilai auto
+* mempengaruhi ukuran box
+
+box-sizing: untuk menentukan ukuran suatu box, tergantung pada kontennya
+	* border-box: agar ukuran box tidak berubah walaupun ukuran padding dan border
+		      mengalami perubahan
+	* content-box: mengijinkan perubahan ukuran box ketika terjadi perubahan pada nilai
+		       padding atau border
+

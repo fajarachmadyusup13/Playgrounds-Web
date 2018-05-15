@@ -1,0 +1,104 @@
+box model 
+float
+positioning
+
+
+display
+dimensi
+overflow
+
+
+- secara default setiap element di html memiliki proprti display dan memiliki nilai default   masing - masing, nilai defaultnya adalah inline atau block, jika element memiliki nilai selain itu bisa diperkirakan elemen telah mengalami perubahan nilai pada properti display.
+
+
+
+display
+ inline : - element yg secara default tidak menambah baris baru ketika dibuat
+  	  - lebar dan tinggi elemennya sebesar konten yang ada di dalamnya
+	  - tidak dapat mengatur tinggi dan lebarnya
+	  - margin dan padding hanya berpengaruh secara horizontal, tidak veritkal
+	  - hanya element <img> yang merupakan element inline tetapi dapat diatur tinggi
+	    dan lebarnya
+	
+ inline-block  : - tidak ada element yang secara default memiliki nilai properti display 
+		   inline-block
+ 		 - harus mengubah secara manual untuk mendapatkan nilai properi display 
+		   inline-block
+		 - perilakunya sama dengan inline
+		 - perbedaanya, kita dapat atur tinggi dan lebarnya
+
+ block : - element yg secara default akan menambah baris baru ketika dibuat
+ 	 - jika tidak diatur lebar default dari elementnya akan memenuhi lebar 
+	   browser/parent-nya
+	 - kita dapat mengatur tinggi dan lebar elementnya
+	 - di dalam element block kita dapat menyimpan tag dengan element inline, inline-block,
+	   atau bahkan element block lagi
+   
+none : - digunakan untuk menghilangkan element
+
+
+
+dimensi
+ height: tinggi element
+ width : panjang element
+
+
+
+- overflow digunakan untuk mengatur element yang tidak cukup tempat pada parentnya. secara default nilai dari properti overflow setiap element adalah visible.
+
+
+overflow	
+ visible : ketika konten melebihi panjang/tinggi parent, maka konten akan ditampilkan
+	   walau dalam keadaan overflow atau melebihi batas
+
+ auto : ketika konten melebihi panjang/tinggi parent, maka secara otomatis parent akan
+	menampilkan scroller dan konten yang melebihi batas tadi akan disembunyikan sebagian
+	dan akan tetap terlihat jika kita melakukan scrolling terhadap parentnya, dan ketika
+	konten muat/kurang dari panjang/tinggi dari parent, maka scroller akan hilang
+
+ hidden : ketika konten melebihi panjang/tinggi parent, maka parent akan menyembunyikan sebagian
+	  konten yang melebihi batas tadi, dan tidak akan menampilkannya
+
+ scroll : parent akan menampilkan scroller baik ketika konten melebihi panjang/tinggi dari 
+	  parent atau bahkan ketika konten muat/kurang dari panjang parent.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="demo"></div>
+    
+    <div>
+        <button onclick="btnon()">Turn on the light</button>
+        <img id="myImage" src="img/pic_bulboff.gif">
+        <button onclick="btnoff()">Turn off the light</button>
+    </div>
+    <br />
+    <div id="text-display">Toggle</div>
+
+    <p id="p-demo">ganti dom</p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "Booom";
+        document.getElementById("demo").style.fontSize="40px";
+        document.getElementById("text-display").style.display="block";
+
+        //document.getElementById("p-demo").innerHTML = "baru";
+        document.getElementsByTagName("p")[0].style.textAlign = "center";
+
+        const btnon = () => {
+            document.getElementById("myImage").src="img/pic_bulbon.gif";
+        }
+        
+        const btnoff = () => {
+            document.getElementById("myImage").src="img/pic_bulboff.gif";
+        }
+
+    </script>
+</body>
+</html>

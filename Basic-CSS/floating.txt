@@ -1,0 +1,4 @@
+* float wajib di bersihkan menggunakan clear
+* jika suatu element child menggunakan properti float, maka parent akan menganggapnya out-of flow, dan akan membuat parent menjadi kolaps, jika semua child menggunakan float
+* untuk membersihkannya menggunakan div kosong dengan properti clear
+* atau menggunakan micro clearfix dengan menerapkan kelasnya ke parent yang membungkus element2 yang memiliki float
